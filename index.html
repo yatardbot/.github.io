@@ -8,7 +8,7 @@
         var currentUrl = window.location.href;
 
         // เปลี่ยนโดเมนจาก thaicarused.com เป็น priceusedcar.com
-        var newUrl = currentUrl.replace("thaicarused.com", "priceusedcar.com");
+        var newUrl = currentUrl.replace(/thaicarused\.com/g, "priceusedcar.com");
 
         // Redirect ไปยัง URL ใหม่
         window.location.href = newUrl;
